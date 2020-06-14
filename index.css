@@ -1,0 +1,124 @@
+body, div, h1, h2, h3, h4, p, ul, li {
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: #666666;
+}
+/*---- 最外層包裝 ----*/
+#WRAPPER {
+	width: 800px;
+	margin:0 auto;
+	padding:0 10px;
+	background-image: url(images/outer_bg.gif);
+}
+/*---- 頁首 ----*/
+#HEADER {
+	background-color: #FFFFFF;
+}
+
+
+/*---- 主選單的文字當滑鼠，當按下去之後要去除虛線，Lo 起頭----*/
+
+#HEADER a {
+ outline: none; /* for Firefox */
+ hlbr:expression(this.onFocus=this.blur()); /* for IE */
+}
+/*---- 主選單的文字當滑鼠，當按下去之後要去除虛線，Lo 結尾----*/
+
+
+
+
+#HEADER h1 a {
+	text-indent: -9999px;
+	display: block;
+	width: 800px;
+	height: 200px;
+	background-image: url(images/header.gif);
+}
+/*---- 主選單 ----*/
+#MAIN_NAV {
+	background-color: #000000;
+	overflow:auto;  /*如果將auto改成none，就不會出現右邊的捲動軸*/
+	height: 25px;  /*加入這一行就可以控制選單的高度*/
+	width: 800px;
+	text-align: center; /*讓選單的文字置中*/
+	word-spacing:15px;  /*讓選單文字之間的距離變大*/
+
+}
+/*---- 主選單的文字當滑鼠移上去會改變字體及底色，Lo 起頭----*/
+#MAIN_NAV a:hover {
+	background-color: #FFFFFF;
+	color: #FF0000;
+}
+/*---- 主選單的文字當滑鼠移上去會改變字體及底色，Lo 結尾----*/
+
+/*---- 主選單的文字當滑鼠，當按下去之後要去除虛線，Lo 起頭----*/
+
+#MAIN_NAV a {
+ outline: none; /* for Firefox */
+ hlbr:expression(this.onFocus=this.blur()); /* for IE */
+}
+/*---- 主選單的文字當滑鼠，當按下去之後要去除虛線，Lo 結尾----*/
+
+
+
+#MAIN_NAV ul {
+	list-style-type:none;
+}
+#MAIN_NAV li {
+	float: left;
+    position:absolute;
+　   z-index:1;
+}
+#MAIN_NAV li a {
+	display: block;
+	padding: 5px 10px 5px 10px;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+	border-right:1px solid #FFFFFF;
+}
+#MAIN_NAV li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+/*---- 內容區 ----*/
+#CONTENT {
+	background-color: #FFFFFF;
+	clear: both;
+}
+#CONTENT h2, #CONTENT h4, #CONTENT p {
+	padding:6px 20px 6px 20px;
+	font-size:12px;
+}
+#CONTENT h2 {
+	font-family: Arial;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 10px;
+	background-color:#666;
+	color:#FFF;
+	letter-spacing:10px;
+	border-top:2px #999 solid;
+}
+/*---- 頁尾 ----*/
+#FOOTER {
+	background-color: #000000;
+}
+#FOOTER h2, #FOOTER p {
+	font-size: 12px;
+	padding:5px 20px;
+	font-family: Arial;
+	color: #FFFFFF;
+	text-align: right; /*讓選單的文字置中*/
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
